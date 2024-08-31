@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Subscribers Management</h3>
+        <div class="login">
+            <label for="username">
+                <span class="icon"><img src="https://drive.google.com/thumbnail?sz=w1000&id=1J_PjdnNlzPAhex7XI6J1Vp6B5XCTFpQJ" alt="User Icon"></span>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </label>
+            <label for="password">
+                <span class="icon1"><img src="https://drive.google.com/thumbnail?sz=w1000&id=1EdEXKT1FIedpMoY-9k9fn0OMz-mz7zQy" alt="Password Icon"></span>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </label>
+            <button class="btn admin" id="adminLoginBtn">
+                Login as ADMIN
+            </button>
+            <button class="btn user" id="userLoginBtn">
+                Login as USER
+            </button>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <img src="./warning.png">
+        <button type="submit" class="close" onclick="closepopup()">x</button>
+        <h1 class="h1">WARNING!</h1>
+        <h2 class="h2">Please enter both username and password</h2>
+        <div class="btn-container">
+            <button type="submit" class="ok" onclick="closepopup()">OK</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

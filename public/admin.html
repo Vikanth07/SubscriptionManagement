@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style1.css">
+    <title>Subscribers Management</title>
+</head>
+<body>
+    <h2>Subscribers Management</h2>
+    <button class="user-btn" id="addUserBtn">Add Subscriber</button>
+    <div class="notifications">
+        <button id="notificationBell" class="bell-icon">&#128276;
+            <span id="notificationCount" class="notification-count"></span>
+        </button>
+        <div id="notificationsPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" id="closeNotificationsPopup">&times;</span>
+                <h3>Pending Subscription Requests</h3>
+                <ul id="requestsList"></ul>
+            </div>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div id="userFormPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <h3>Add New User</h3>
+            <form id="userForm">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit" class="btn">Add User</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="confirmDeletePopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closeConfirmPopup">&times;</span>
+            <h3>Confirm Delete</h3>
+            <hr>
+            <p id="confirmMessage">Deleting: </p>
+            <hr>
+            <div class="popup-footer">
+                <button id="confirmDeleteBtn" class="btn btn-delete">Delete</button>
+                <button id="cancelDeleteBtn" class="btn btn-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="actionNotificationPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closeActionNotificationPopup">&times;</span>
+            <p id="notificationMessage"></p>
+        </div>
+    </div>
+
+    <script src="./admin.js"></script>
+</body>
+</html>

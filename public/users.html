@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style2.css">
+    <title>Subscriptions Management</title>
+</head>
+<body>
+    <h2>Subscriptions Management</h2>
+    <button class="subscription-btn" id="addSubscriptionBtn">Add Subscription</button>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Subscription Type</th>
+                <th>Subscription Start Date</th>
+                <th>Subscription End Date</th>
+                <th>Payment Status</th>
+                <th>Last Payment Date</th>
+            </tr>
+        </thead>
+        <tbody id="subscriptionTableBody"></tbody>
+    </table>
+
+    <div id="subscriptionFormPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closeSubscriptionPopup">&times;</span>
+            <h3>Add New Subscription</h3>
+            <form id="subscriptionForm">
+                <input type="text" id="subscriptionType" name="subscriptionType" placeholder="Subscription Type" required>
+                <label for="subscriptionStartDate">Start Date</label>
+                <input type="date" id="subscriptionStartDate" name="subscriptionStartDate" required>
+                <label for="subscriptionEndDate">End Date</label>
+                <input type="date" id="subscriptionEndDate" name="subscriptionEndDate" required>
+                <input type="text" id="paymentStatus" name="paymentStatus" placeholder="Payment Status" required>
+                <label for="lastPaymentDate">Last Payment Date</label>
+                <input type="date" id="lastPaymentDate" name="lastPaymentDate" required>
+                <button type="submit" class="btn">Add Subscription</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="subscriptionMessagePopup" class="modal">
+        <div class="modal-content">
+            <span id="closeMessagePopup" class="close-btn">&times;</span>
+            <p id="subscriptionMessageText"></p>
+        </div>
+    </div>
+
+    <script src="./user.js"></script>
+</body>
+</html>

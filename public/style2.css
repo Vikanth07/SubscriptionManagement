@@ -1,0 +1,141 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #ddd;
+    border-left: none;
+    border-right: none;
+}
+
+th {
+    background-color: white;
+}
+
+tr:nth-of-type(2n) {
+    background-color: white;
+}
+
+tr:nth-of-type(2n+1) {
+    background-color: #f5f5f5;
+}
+
+.btn {
+    padding: 5px 15px;
+    margin: 2px;
+    border: 2px solid #f5f5f5;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.subscription-btn {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 0, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 10% auto 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form input[type="text"], form input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.popup-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.popup-footer .btn-delete:hover {
+    background-color: #35e435;
+    cursor: pointer;
+}
+
+.popup-footer .btn-cancel:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
